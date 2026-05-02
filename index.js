@@ -14,7 +14,7 @@ const TABLE_NAME = 'url-shortener-urls'
 
 // Health check
 app.get('/health', (req, res) => {
-  res.json({ status: 'ok' })
+  res.json({ status: 'ok', version: '1.1', app: 'url-shortener' })
 })
 
 // Shorten a URL
